@@ -14,12 +14,8 @@ const display = document.querySelector(".display");
 /*----------------------------- Event Listeners -----------------------------*/
 
 
-
+// Parent listening on every single click
 calculator.addEventListener('click', (event) => {
-    // This log is for testing purposes to verify we're getting the correct value
-    // You have to click a button to see this log
-    // console.log(event.target.innerText);
-
 
     const value = event.target.innerText;
 
@@ -48,6 +44,7 @@ calculator.addEventListener('click', (event) => {
 
 /*-------------------------------- Functions --------------------------------*/
 
+// Update display of numbers on the calculator
 function updateDisplay(content) {
     display.innerText = content;
 }
